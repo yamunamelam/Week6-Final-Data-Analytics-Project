@@ -110,6 +110,34 @@ The dashboard allows users to filter the report and compare business performance
 5. **Discounts and profitability:** Discount patterns should be reviewed to identify transactions where discounts may reduce profit.
 6. **Sales monitoring:** Monthly sales trends can help identify seasonal patterns and changes in demand.
 
+## Correlation Analysis
+
+Correlation analysis was performed to understand the relationships between Sales, Profit, Discount, and Quantity.
+
+**Key findings:**
+- Sales and Profit have a moderate positive correlation of **0.479**.
+- Profit and Discount have a weak negative correlation of **-0.219**.
+- Sales and Discount have a very weak negative correlation of **-0.028**.
+- Sales and Quantity have a weak positive correlation of **0.201**.
+
+These findings suggest that higher sales tend to be associated with higher profit, while higher discounts show a weak negative relationship with profit. Correlation does not imply causation.
+
+## Outlier Investigation
+
+Potential outliers were identified using the **Interquartile Range (IQR) method**. Values below Q1 − 1.5 × IQR or above Q3 + 1.5 × IQR were flagged.
+
+| Column | Potential Outliers |
+|---|---:|
+| Sales | 1,167 |
+| Profit | 1,881 |
+| Discount | 856 |
+| Quantity | 170 |
+
+These values were flagged for further investigation. They were not automatically removed because some may represent genuine business transactions.
+
+## Conclusion
+
+The analysis identified key sales and profitability trends, regional and category performance differences, and potential areas for improvement. The findings can support better discount strategies, profitability monitoring, and data-driven business decisions.
 ## 11. Business Recommendations
 
 1. Investigate Tables, Bookcases, and Supplies to identify the reasons for losses and assess pricing, costs, and discount policies.
