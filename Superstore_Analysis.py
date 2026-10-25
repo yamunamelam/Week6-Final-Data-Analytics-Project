@@ -365,3 +365,29 @@ with open(REPORT_FILE, "w", encoding="utf-8") as file:
     )
 
 print("Complete project report saved successfully:", REPORT_FILE)
+
+# CORRELATION ANALYSIS
+print("\nCORRELATION ANALYSIS")
+print("-" * 40)
+
+correlation = df[["Sales", "Profit", "Discount", "Quantity"]].corr()
+print(correlation.round(3))
+
+# OUTLIER INVESTIGATION USING IQR
+print("\nOUTLIER INVESTIGATION")
+print("-" * 40)
+
+for column in ["Sales", "Profit", "Discount", "Quantity"]:
+    Q1 = df[column].quantile(0.25)
+    Q3 = df[column].quantile(0.75)
+    IQR = Q3 - Q1
+
+    lower_limit = Q1 - 1.5 * IQR
+    upper_limit = Q3 + 1.5 * IQR
+
+    outliers = df[
+        (df[column] < lower_limit) |
+        (df[column] > upper_limit)
+    ]
+
+    print(f"{column}: {len(outliers)} potential outliers")
