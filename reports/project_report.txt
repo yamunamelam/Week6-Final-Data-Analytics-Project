@@ -1,1 +1,52 @@
-Superstore Sales Analysis - Final Project Report
+SUPERSTORE SALES ANALYSIS
+============================================================
+
+1. PROJECT INTRODUCTION
+This project analyzes Superstore sales data using Python to identify sales trends, profitability, regional performance, and opportunities for business improvement.
+
+2. PROJECT OBJECTIVES
+- Clean and prepare the dataset.
+- Calculate total sales, profit, and orders.
+- Compare sales and profit across categories and regions.
+- Analyze monthly sales trends and customer segments.
+- Identify loss-making sub-categories.
+- Examine the relationship between discounts and profit.
+
+3. TOOLS AND LIBRARIES
+Python, Pandas, NumPy, Matplotlib, Seaborn, and pathlib.
+
+4. DATA CLEANING
+Original rows: 10,800
+Cleaned rows: 9,994
+Missing postal codes: 11
+Rows without Order Date were removed. Date and numeric columns were converted to appropriate data types.
+
+5. KEY PERFORMANCE INDICATORS
+Total Sales: $2,297,200.86
+Total Profit: $286,397.02
+Total Orders: 5,009
+Average Discount: 15.62%
+
+6. KEY FINDINGS
+Highest-sales category: Technology
+Highest-profit category: Technology
+Highest-sales region: West
+Highest-profit region: West
+Top sub-category by sales: Phones
+Largest loss-making sub-category: Tables
+
+7. BUSINESS RECOMMENDATIONS
+- Investigate losses in Tables, Bookcases, and Supplies.
+- Review high-discount transactions and pricing strategies.
+- Study successful products in the Technology category.
+- Investigate the drivers of strong performance in the West.
+- Monitor monthly sales and regional profitability.
+
+8. CONCLUSION
+The analysis provides insights into sales performance, profitability, product categories, regions, and discount levels. These findings can help guide further investigation and data-driven business decisions.
+
+9. PROJECT OUTPUTS
+Cleaned dataset: data/superstore_cleaned.csv
+Charts: visualizations/
+Summary: reports/project_summary.txt
+Python source: Superstore_Analysis.py

@@ -1,0 +1,15 @@
+SUPERSTORE SALES ANALYSIS - FINAL SUMMARY
+=============================================
+
+Total Sales: $2,297,200.86
+Total Profit: $286,397.02
+Total Orders: 5,009
+Average Discount: 15.62%
+
+KEY FINDINGS
+--------------------
+1. Technology has the highest sales by category.
+2. The West region has the highest sales and profit.
+3. Phones is the top sub-category by sales.
+4. Tables has the largest sub-category loss.
+5. Review high-discount transactions for profitability.
